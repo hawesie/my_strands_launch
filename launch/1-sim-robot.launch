@@ -1,0 +1,6 @@
+<launch>
+  
+  <!-- Scitos sim robot in bham lg-->
+  <include file="$(find strands_morse)/launch/bham_cs_morse.launch "/>
+
+</launch>
