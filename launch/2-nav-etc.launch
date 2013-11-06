@@ -1,13 +1,15 @@
 <launch>
 
-	  <arg name="env" default="$(find scitos_description)/bham/maps/cs_lg.yaml"/>
+	  <arg name="map" default="$(find strands_morse)/bham/maps/cs_lg.yaml"/>
 
-	  <include file="$(find strands_datacentre)/launch/datacentre.launch.launch"/>
+	  <include file="$(find strands_datacentre)/launch/datacentre.launch"/>	  	
 
 	  <include file="$(find scitos_description)/launch/scitos_state_publisher.launch"/>
 		
-	  <include file="$(find scitos_2d_navigation)/launch/scitos_2d_nav.launch"/>
+	  <include file="$(find scitos_2d_navigation)/launch/scitos_2d_nav.launch">
+ 		<arg name="map" value="$(arg map)"/>
+	  </include>
 
 	  <include file="$(find scitos_docking)/launch/charging.launch"/>
 
-<launch>
+</launch>

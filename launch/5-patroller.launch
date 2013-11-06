@@ -1,0 +1,11 @@
+<launch>
+
+
+  <include file="$(find waypoint_patroller)/launch/long_term_patroller.launch">
+  	<arg name="waypoints" value="cs_lg_sim"/>
+  </include>
+
+			  
+</launch>
+
+
