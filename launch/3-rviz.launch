@@ -2,6 +2,6 @@
 
   <include file="$(find strands_morse)/bham/launch/bham_cs_rviz.launch"/>
 
-  <node pkg="rviz" type="rviz" respawn="true" name="rviz" output="screen"/>
+  <node pkg="rviz" type="rviz" respawn="false" name="rviz" output="screen"/>
 			  
 </launch>
