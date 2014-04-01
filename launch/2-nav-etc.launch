@@ -3,8 +3,7 @@
 	  <arg name="map" default="$(find strands_morse)/bham/maps/cs_lg.yaml"/>
 	  <!-- <arg name="map" default="/Users/nah/patrolling_data/map.yaml"/> -->
 
-
-	  <include file="$(find strands_datacentre)/launch/datacentre.launch"/>	  	
+	  <include file="$(find ros_datacentre)/launch/datacentre.launch"/>	  	
 
 	  <include file="$(find scitos_description)/launch/scitos_state_publisher.launch"/>
 		
