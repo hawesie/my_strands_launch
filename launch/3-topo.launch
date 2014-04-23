@@ -1,0 +1,17 @@
+<launch>
+
+	  <arg name="map" default="$(find strands_morse)/bham/maps/cs_lg.yaml"/>
+	  <!-- <arg name="map" default="/Users/nah/patrolling_data/map.yaml"/> -->
+
+	  <include file="$(find monitored_navigation)/launch/monitored_nav.launch"/>
+
+
+	  <include file="$(find topological_navigation)/launch/topological_navigation.launch">
+	  	<arg name="map" value="cs_lg_sim_topological"/>
+	  	<arg name="node_by_node" value="false"/>
+	  </include>
+
+
+	  <include file="$(find task_executor)/launch/task-scheduler.launch"/>
+
+</launch>
