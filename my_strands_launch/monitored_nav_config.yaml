@@ -1,0 +1,29 @@
+#config file for adding the strands specific recovery berhaviours to the monitored navigation state machine
+nav_recovery:
+    package: my_strands_launch
+    recovery_file: recover_nav
+    recovery_class: RecoverNav
+monitor_recovery_pairs:
+    -   name: bumper
+        package: strands_monitored_nav_states
+        monitor_file: monitor_bumper
+        monitor_class: MonitorBumper
+        recovery_file: recover_bumper
+        recovery_class: RecoverBumper
+    -   name: pad_pause_nav
+        package: strands_monitored_nav_states
+        monitor_file: monitor_pause
+        monitor_class: MonitorPause
+        recovery_file: pause_state
+        recovery_class: PauseState
+    -   name: service_pause_nav
+        package: monitored_navigation
+        monitor_file: monitor_srv_pause
+        monitor_class: MonitorSrvPause
+        recovery_file: pause_srv_state
+        recovery_class: PauseSrvState
+human_help:
+    -   name: screen
+        package: strands_human_help
+        helper_file: help_screen
+        helper_class: HelpScreen

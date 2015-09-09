@@ -1,0 +1,1 @@
+roslaunch strands_bringup strands_navigation.launch map:=/Users/nah/code/indigo_ws/src/strands_morse/uol/maps/uol_mht_III.yaml no_go_map:=/Users/nah/code/indigo_ws/src/strands_morse/uol/maps/uol_mht_III.yaml topological_map:=uol_mht_sim mon_nav_config_file:=/Users/nah/code/indigo_ws/src/ros_dev/my_strands_launch/monitored_nav_config.yaml
